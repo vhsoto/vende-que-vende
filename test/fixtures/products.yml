@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  price: 1
+hasselblad:
+  title: Hasselblad
+  description: Sigma sd Quattro H
+  price: 9819
 
-two:
-  title: MyString
-  description: MyText
-  price: 1
+kodak:
+  title: Kodak
+  description: Sony Cyber-shot DSC-RX1R II
+  price: 3992
