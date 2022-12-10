@@ -23,4 +23,16 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select 'form'
   end
+
+  test 'allow to create a new product' do
+    post products_path, params: {
+      product: {
+        title: 'Kodak',
+        description: 'Kodak QI-456',
+        price: 3456
+      }
+    }
+
+    assert_redirected_to products_path
+  end
 end
