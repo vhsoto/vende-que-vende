@@ -11,6 +11,10 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
+
   def create
     @product = Product.new(product_params)
 
@@ -19,6 +23,10 @@ class ProductsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def update
+  
   end
 
   private

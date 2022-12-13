@@ -17,7 +17,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select '.price', '$3992'
   end
 
-  test 'Render new product form' do
+  test 'render new product form' do
     get new_product_path
 
     assert_response :success
@@ -46,5 +46,12 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     }
 
     assert_response :unprocessable_entity
+  end
+
+  test 'render edit product form' do
+    get edit_product_path(products(:kodak))
+
+    assert_response :success
+    assert_select 'form'
   end
 end
