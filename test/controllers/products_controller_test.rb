@@ -24,7 +24,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'form'
   end
 
-  test 'allow to create a new product' do
+  test 'allows to create a new product' do
     post products_path, params: {
       product: {
         title: 'Kodak',
@@ -53,5 +53,26 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select 'form'
+  end
+
+  test 'allows to update a product' do
+    patch product_path(products(:kodak)), params: {
+      product: {
+        price: 2500
+      }
+    }
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], 'Product was successfully updated!'
+  end
+
+  test 'does not allow to update a product with an invalid field' do
+    patch product_path(products(:kodak)), params: {
+      product: {
+        price: nil
+      }
+    }
+
+    assert_response :unprocessable_entity
   end
 end
