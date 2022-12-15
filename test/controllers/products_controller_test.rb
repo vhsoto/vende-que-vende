@@ -75,4 +75,13 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :unprocessable_entity
   end
+
+  test 'can delete products' do
+    assert_difference('Product.count', -1) do
+      delete product_path(products(:kodak))
+    end
+
+    assert_redirected_to products_path
+    assert_equal flash[:notice], 'Product was successfully deleted!'
+  end
 end
