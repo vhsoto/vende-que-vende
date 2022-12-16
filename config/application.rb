@@ -20,9 +20,9 @@ module Vendiendo
     # config.eager_load_paths << Rails.root.join("extras")
 
     # available languages
-    config.i18n.available_locales = [:es, :en ]
+    config.i18n.available_locales = [:es, :en]
 
     # default language
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :es
   end
 end
