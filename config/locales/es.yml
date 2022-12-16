@@ -1,6 +1,10 @@
 es:
   common:
     confirm: "¿Estas seguro de eliminar?"
+    back: "Regresar"
+  shared:
+    header:
+      add: "Agregar producto"
   activerecord:
     model:
       product: Producto
@@ -29,9 +33,30 @@ es:
       title: "Agregar producto"
     index:
       title: "Lista de productos"
+    show:
+      edit: "Editar"
+      delete: "Eliminar"
     create:
       created: "¡Producto creado correctamente!"
     update:
       updated: "¡Producto actualizado correctamente!"
     destroy:
       destroyed: "¡Producto eliminado correctamente!"
+  categories:
+    category:
+      title: "Categorias"
+      edit: "Editar"
+      delete: "Eliminar"
+    edit:
+      title: "Editar categoría"
+    new:
+      title: "Agregar categoría"
+    index:
+      title: "Categorías"
+      new: "Agregar categoría"
+    create:
+      created: "¡Categoría creada correctamente!"
+    update:
+      updated: "¡Categoría actualizada correctamente!"
+    destroy:
+      destroyed: "¡Categoría actualizada correctamente!"
