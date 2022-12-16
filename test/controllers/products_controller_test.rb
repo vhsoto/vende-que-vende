@@ -13,7 +13,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select '.title', 'Kodak'
-    assert_select '.description', 'Sony Cyber-shot DSC-RX1R II'
+    assert_select '.description', 'Kodak Cyber-shot DSC-RX1R II'
     assert_select '.price', '$3992'
   end
 

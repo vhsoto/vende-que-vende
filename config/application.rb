@@ -23,6 +23,6 @@ module Vendiendo
     config.i18n.available_locales = [:es, :en]
 
     # default language
-    config.i18n.default_locale = :es
+    config.i18n.default_locale = :en
   end
 end

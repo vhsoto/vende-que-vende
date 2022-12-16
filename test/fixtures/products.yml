@@ -7,5 +7,15 @@ hasselblad:
 
 kodak:
   title: Kodak
+  description: Kodak Cyber-shot DSC-RX1R II
+  price: 3992
+
+sony:
+  title: Sony
   description: Sony Cyber-shot DSC-RX1R II
+  price: 3992
+
+gopro:
+  title: Go pro
+  description: Go pro Cyber-shot DSC-RX1R II
   price: 3992
