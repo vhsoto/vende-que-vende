@@ -1,0 +1,35 @@
+es:
+  common:
+    confirm: "¿Estas seguro de eliminar?"
+  activerecord:
+    model:
+      product: Producto
+    attributes:
+      product:
+        title: "Título"
+        description: "Descripción"
+        price: "Precio"
+        photo: "Foto"
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: "no puede estar vacío"
+            description:
+              blank: "no puede estar vacío"
+            price:
+              blank: "no puede estar vacío"
+  products:
+    edit:
+       title: "Editar producto"
+    new:
+      title: "Agregar producto"
+    index:
+      title: "Lista de productos"
+    create:
+      created: "¡Producto creado correctamente!"
+    update:
+      updated: "¡Producto actualizado correctamente!"
+    destroy:
+      destroyed: "¡Producto eliminado correctamente!"
