@@ -1,24 +1,59 @@
-# README
+# Selling & Buying
+It is a marketplace app to train or learn new concepts related to Ruby, Rails, and best practices in development, you can find the following topics:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Rails CLI
+- Routes
+- Controllers
+- Models (ActiveRecord)
+- Views
+- Associations
+- Partials
+- TDD (minitest)
+- Validations
+- ActiveStorage
+- I18n
+- Multiquery - Async
+- Filtering
+- Hotwire (Turbo - Stimulus Js)
+- Query Obejct Pattern
+- Authentication
+- Policies
+- Tailwind CSS
+- Importmaps
+- View Components
+- ActionMailer
+- ServiceObject
+- Background Jobs
+- Refactoring
 
-Things you may want to cover:
+**Note: to see a specific topic, please surf into the commits history.****
 
-* Ruby version
+### Check this before in your local environment
+- Ruby version 3.1.2
+- Rails versión 7.0.4
+- PostgreSQL 12
 
-* System dependencies
+### Install
+Clone the repository
 
-* Configuration
+`git clone https://github.com/vhsoto/vende-que-vende.git`
+`cd vende-que-vende`
 
-* Database creation
+### Install dependencies
 
-* Database initialization
+Using Bundler:
 
-* How to run the test suite
+`bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+Initialize the database
 
-* Deployment instructions
+`rails db:create db:migrate db:fixtures:load`
 
-* ...
+Run the tests
+
+`rails test`
+
+Run the app
+
+`rails s`
+
