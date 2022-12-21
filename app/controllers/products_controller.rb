@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all.with_attached_photo.order(created_at: :desc)
+    @categories = Category.order(name: :desc).load_async
+    @products = Product.with_attached_photo.order(created_at: :desc).load_async
   end
 
   def show
