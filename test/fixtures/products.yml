@@ -1,21 +1,25 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-hasselblad:
-  title: Hasselblad
-  description: Sigma sd Quattro H
+ps4:
+  title: ps4
+  description: PlayStation 4 - new generation
   price: 9819
+  category: videogames
 
-kodak:
-  title: Kodak
-  description: Kodak Cyber-shot DSC-RX1R II
+xbox_one:
+  title: xbox one
+  description: xbox one 512GB
   price: 3992
+  category: videogames
 
 sony:
   title: Sony
   description: Sony Cyber-shot DSC-RX1R II
   price: 3992
+  category: cameras
 
 gopro:
   title: Go pro
   description: Go pro Cyber-shot DSC-RX1R II
   price: 3992
+  category: cameras
