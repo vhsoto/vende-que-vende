@@ -6,6 +6,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select '.product', 4
+    assert_select '.category', 3
+  end
+
+  test 'render products list filtered by category' do
+    get products_path(category_id: categories(:cameras).id)
+
+    assert_response :success
+    assert_select '.product', 2
   end
 
   test 'render a detail product page' do
