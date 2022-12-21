@@ -35,6 +35,7 @@ es:
       title: "Agregar producto"
     index:
       title: "Lista de productos"
+      all: "Todos"
     show:
       edit: "Editar"
       delete: "Eliminar"
