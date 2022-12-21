@@ -1,5 +1,3 @@
-<h1><%= t('.title') %></h1>
-
 <%= link_to  product_path(product), class: 'product' do %>
   <h2><%= product.title %></h2>
   <%= image_tag product.photo, size: '200x200' if product.photo.attached? %>

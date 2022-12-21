@@ -29,8 +29,6 @@ es:
             price:
               blank: "no puede estar vacío"
   products:
-    product:
-      title: "Productos"
     edit:
        title: "Editar producto"
     new:
