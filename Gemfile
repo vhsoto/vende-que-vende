@@ -24,6 +24,9 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
+# pagination
+gem "pagy", "~> 6.0"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -75,5 +78,7 @@ group :test do
 end
 
 gem "faker", "~> 3.0"
+
+
 
 

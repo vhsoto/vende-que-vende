@@ -5,8 +5,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path
 
     assert_response :success
-    assert_select '.product', 4
-    assert_select '.category', 3
+    assert_select '.product', 10
+    assert_select '.category', 10
   end
 
   test 'render products list filtered by category' do
@@ -20,7 +20,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(min_price: 3000, max_price: 5000)
 
     assert_response :success
-    assert_select '.product', 3
+    assert_select '.product', 4
   end
 
   test 'search a product by query_text' do
@@ -35,7 +35,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(order_by: 'expensive')
 
     assert_response :success
-    assert_select '.product', 4
+    assert_select '.product', 10
     assert_select '.products .product:first-child h2', 'ps4'
   end
 
@@ -43,8 +43,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(order_by: 'cheap')
 
     assert_response :success
-    assert_select '.product', 4
-    assert_select '.products .product:first-child h2', 'xbox one'
+    assert_select '.product', 10
+    assert_select '.products .product:first-child h2', 'El hobbit'
   end
 
   test 'render a detail product page' do

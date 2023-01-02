@@ -4,7 +4,28 @@ videogames:
   name: Videogames
 
 cameras:
-  name: cameras
+  name: Cameras
 
 clothes:
   name: clothes
+
+computers:
+  name: Computers
+
+cars:
+  name: Cars
+
+music:
+  name: Music
+
+electronic:
+  name: Electronic
+
+books:
+  name: Books
+
+mobile:
+  name: Mobiles
+
+sports:
+  name: Sports
