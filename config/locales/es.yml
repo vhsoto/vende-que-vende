@@ -1,4 +1,6 @@
 es:
+  app_name: 'Véndelo'
+  meta_title: '¡Compra y vende productos de segunda mano!'
   common:
     confirm: "¿Estas seguro de eliminar?"
     back: "Regresar"
