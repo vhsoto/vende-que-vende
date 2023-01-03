@@ -71,4 +71,8 @@ en:
       updated: "category was successfully updated!"
     destroy:
       destroyed: "category was successfully deleted!"
+  authentication:
+    users:
+      create:
+        created: 'Your account has been created! Welcome to Sell It'
 

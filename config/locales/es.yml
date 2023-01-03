@@ -71,3 +71,7 @@ es:
       updated: "¡Categoría actualizada correctamente!"
     destroy:
       destroyed: "¡Categoría actualizada correctamente!"
+  authentication:
+    users:
+      create:
+        created: '¡Tu cuenta ha sido creada! Disfruta de Véndelo'
