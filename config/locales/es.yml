@@ -75,3 +75,7 @@ es:
     users:
       create:
         created: '¡Tu cuenta ha sido creada! Disfruta de Véndelo'
+    sessions:
+      create:
+        created: '¡Bienvenido!'
+        failed: 'Autenticación inválida'
