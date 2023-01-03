@@ -11,4 +11,6 @@ class User < ApplicationRecord
     self.username = username.downcase
     self.email = email.downcase
   end
+
+  has_many :products, dependent: :destroy
 end
