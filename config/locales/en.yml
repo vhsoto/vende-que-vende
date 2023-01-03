@@ -9,10 +9,14 @@ en:
     header:
       add: "Add product"
       categories: "Categories"
+      login: 'Log in'
+      register: 'Sign Up'
+      logout: 'Sign Out'
   activerecord:
     model:
       product: Product
       category: Category
+      user: User
     attributes:
       product:
         title: "Title"
@@ -21,16 +25,10 @@ en:
         photo: "Photo"
       category:
         name: Name
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: "can't be blank"
-            description:
-              blank: "can't be blank"
-            price:
-              blank: "can't be blank"
+      user:
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
   products:
     edit:
       title: "Edit product"
@@ -80,4 +78,6 @@ en:
       create:
         created: 'Welcome!'
         failed: 'Invalid login'
+      destroy:
+        destroyed: 'Session ended. Bye!'
 

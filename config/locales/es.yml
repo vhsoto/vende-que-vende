@@ -9,10 +9,14 @@ es:
     header:
       add: "Agregar producto"
       categories: "Categorías"
+      login: 'Ingresar'
+      register: 'Registarse'
+      logout: 'Salir'
   activerecord:
     model:
       product: Producto
       category: Categoría
+      user: Usuario
     attributes:
       product:
         title: "Título"
@@ -21,16 +25,10 @@ es:
         photo: "Foto"
       category: 
         name: "Nombre"
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: "no puede estar vacío"
-            description:
-              blank: "no puede estar vacío"
-            price:
-              blank: "no puede estar vacío"
+      user:
+        email: 'Correo'
+        username: 'Usuario'
+        password: 'Contraseña'
   products:
     edit:
        title: "Editar producto"
@@ -80,3 +78,5 @@ es:
       create:
         created: '¡Bienvenido!'
         failed: 'Autenticación inválida'
+      destroy:
+        destroyed: 'Sesión terminada ¡Hasta pronto!'
