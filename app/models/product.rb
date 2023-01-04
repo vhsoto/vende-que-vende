@@ -19,6 +19,6 @@ class Product < ApplicationRecord
   has_one_attached :photo
 
   def owner?
-    user_id == Current.user.id
+    user_id == Current.user&.id
   end
 end
