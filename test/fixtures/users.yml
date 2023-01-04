@@ -4,6 +4,7 @@ pepito:
   email: pepito@vendelo.com
   username: pepito
   password_digest: <%= BCrypt::Password.create('123456', cost: 5) %>
+  admin: true
 
 maria:
   email: maria@vendelo.com

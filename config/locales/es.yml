@@ -5,6 +5,7 @@ es:
     confirm: "¿Estas seguro de eliminar?"
     back: "Regresar"
     not_logged_in: 'Debes iniciar sesión o crear una cuenta'
+    not_authorized: 'No tienes permisos para esta acción'
   shared:
     header:
       add: "Agregar producto"
