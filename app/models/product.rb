@@ -17,4 +17,8 @@ class Product < ApplicationRecord
   belongs_to :user, default: -> { Current.user }
 
   has_one_attached :photo
+
+  def owner?
+    user_id == Current.user.id
+  end
 end
