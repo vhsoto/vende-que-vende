@@ -6,6 +6,7 @@ en:
     back: "Back"
     not_logged_in: 'You have to login or create an account'
     not_authorized: 'You do not have permissions for this actions'
+    missing: 'Not Found!'
   shared:
     header:
       add: "Add product"
@@ -47,6 +48,7 @@ en:
     show:
       edit: "Edit"
       delete: "Delete"
+      view_more_products: 'View more products %{username}'
     create:
       created: "Product was successfully saved!"
     update:
