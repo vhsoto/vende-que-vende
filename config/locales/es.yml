@@ -14,6 +14,7 @@ es:
       login: 'Ingresar'
       register: 'Registarse'
       logout: 'Salir'
+      favorites: 'Favoritos'
   activerecord:
     model:
       product: Producto
@@ -55,6 +56,9 @@ es:
       updated: "¡Producto actualizado correctamente!"
     destroy:
       destroyed: "¡Producto eliminado correctamente!"
+  favorites:
+    index:
+      title: 'Mis productos favoritos'
   categories:
     category:
       title: "Categorias"

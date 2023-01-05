@@ -14,6 +14,7 @@ en:
       login: 'Log in'
       register: 'Sign Up'
       logout: 'Sign Out'
+      favorites: 'Favorites'
   activerecord:
     model:
       product: Product
@@ -55,6 +56,9 @@ en:
       updated: "Product was successfully updated!"
     destroy:
       destroyed: "Product was successfully deleted!"
+  favorites:
+    index:
+      title: 'My favorite products'
   categories:
     category:
       title: "Categories"
