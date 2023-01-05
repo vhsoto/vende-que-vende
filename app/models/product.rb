@@ -13,6 +13,7 @@ class Product < ApplicationRecord
 
   validates :title, :description, :price, presence: true
 
+  has_many :favorites, dependent: :destroy
   belongs_to :category
   belongs_to :user, default: -> { Current.user }
 
