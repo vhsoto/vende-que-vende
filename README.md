@@ -36,9 +36,9 @@ It is a marketplace app to train or learn new concepts related to Ruby, Rails, a
 ### Install
 Clone the repository
 
-`git clone https://github.com/vhsoto/vende-que-vende.git
+`git clone https://github.com/vhsoto/vende-que-vende.git`
 
-cd vende-que-vende`
+`cd vende-que-vende`
 
 ### Install dependencies
 
