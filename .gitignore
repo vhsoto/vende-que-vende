@@ -32,3 +32,6 @@
 
 # Ignore vscode config
 /.vscode
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
