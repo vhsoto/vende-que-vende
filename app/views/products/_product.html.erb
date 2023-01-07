@@ -1,5 +1,8 @@
-<%= link_to  product_path(product), class: 'product', 'data-turbo-frame': '_top' do %>
-  <h2><%= product.title %></h2>
-  <%= image_tag product.photo, size: '200x200' if product.photo.attached? %>
+<%= link_to  product_path(product), class: 'product bg-white mb-2 p-2 rounded', 'data-turbo-frame': '_top' do %>
+  <%= image_tag product.photo, class: "w-full h-60 object-cover" if product.photo.attached? %>
+  <div class="m2">
+    <span class="font-bold text-xl">$<%= product.price %></span>
+    <h2><%= product.title %></h2>
+    <p class="text-gray-500 text-sm mt-2"><%= product.description %></p>
+  </div>
 <% end %>
-<span>$<%= product.price %></span>
