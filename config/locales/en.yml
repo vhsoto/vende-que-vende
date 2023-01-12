@@ -93,4 +93,8 @@ en:
         failed: 'Invalid login'
       destroy:
         destroyed: 'Session ended. Bye!'
+  user_mailer:
+    welcome:
+      subject: 'Welcome aboard to Vendelo'
+      welcome_message: 'Hey %{username}, welcome to Vendelo. We hope you sell a lot!'
 

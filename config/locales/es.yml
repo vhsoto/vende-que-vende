@@ -87,3 +87,7 @@ es:
         failed: 'Autenticación inválida'
       destroy:
         destroyed: 'Sesión terminada ¡Hasta pronto!'
+  user_mailer:
+    welcome:
+      subject: 'Bienvenid@ a bordo en Vendelo'
+      welcome_message: 'Hola %{username}, bienvenido a Vendelo. ¡Esperamos que vendas mucho!'
