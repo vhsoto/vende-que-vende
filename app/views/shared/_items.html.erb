@@ -1,4 +1,4 @@
-<%= link_to t('.add'), new_product_path, class: 'mx-2 font-bold text-teal-500' if Current.user %>
+<%= link_to t('.add'), new_product_path, class: 'mx-2 font-bold text-teal-500', data: { turbo_frame: "modal" } if Current.user %>
 <%= link_to t('.categories'), categories_path, class: 'mx-2 font-bold text-teal-500' if Current.user&.admin? %>
 <%= link_to t('.favorites'), favorites_path, class: 'mx-2 font-bold text-teal-500' %>
 
