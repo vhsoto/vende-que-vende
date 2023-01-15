@@ -22,6 +22,7 @@ It is a marketplace app to train or learn new concepts related to Ruby, Rails, a
 - Importmaps
 - View Components
 - ActionMailer
+- ActionCable
 - ServiceObject
 - Background Jobs
 - Refactoring
