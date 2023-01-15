@@ -1,8 +1,4 @@
-<h1 class="title"><%= @product.title %></h1>
-<p class="description"><%= @product.description %></p>
-<span class="price">$<%= @product.price %></span>
-
-<%= image_tag @product.photo if @product.photo.attached? %>
+<%= render partial: 'products/product_detail', locals: { product: @product } %>
 
 <%= link_to  t('.edit'), edit_product_path(@product) if @product.owner? %>
 <%= link_to  t('.delete'), product_path(@product), data: { turbo_method: :delete, turbo_confirm: t('common.confirm') } if @product.owner? %>
@@ -12,4 +8,4 @@
 
 <%= render partial: "favorite", locals: { product: @product } %>
 
-<div data-controller="websocket-product" data-productid="<%= @product.id %>"></div>
+<%= turbo_stream_from @product %>
