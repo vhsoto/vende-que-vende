@@ -16,6 +16,7 @@ It is a marketplace app to train or learn new concepts related to Ruby, Rails, a
 - Filtering
 - Hotwire (Turbo - Stimulus Js)
 - Query Obejct Pattern
+- Service Object Pattern
 - Authentication
 - Policies
 - Tailwind CSS
@@ -23,7 +24,6 @@ It is a marketplace app to train or learn new concepts related to Ruby, Rails, a
 - View Components
 - ActionMailer
 - ActionCable
-- ServiceObject
 - Background Jobs
 - Refactoring
 
